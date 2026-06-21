@@ -35,6 +35,7 @@ export default function CardSwiper({ movies }) {
         <Swiper
           onSwiper={setSwiperRef}
           slidesPerView={4}
+          slidesPerGroup={2} //here
           centeredSlides={false}
           spaceBetween={18}
           pagination={{
@@ -52,22 +53,27 @@ export default function CardSwiper({ movies }) {
           breakpoints={{
             0: {
               slidesPerView: 2,
+              slidesPerGroup: 2,
               spaceBetween: 5,
             },
             400: {
               slidesPerView: 2,
+              slidesPerGroup: 2,
               spaceBetween: 5,
             },
             640: {
               slidesPerView: 3,
+              slidesPerGroup: 2,
               spaceBetween: 10,
             },
             768: {
               slidesPerView: 4,
+              slidesPerGroup: 2,
               spaceBetween: 16,
             },
             1024: {
               slidesPerView: 4,
+              slidesPerGroup: 2,
               spaceBetween: 18,
             },
           }}

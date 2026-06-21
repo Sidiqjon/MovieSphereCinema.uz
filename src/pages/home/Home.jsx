@@ -11,7 +11,7 @@ const Home = () => {
     data: cardSwiperData,
     loading: cardSwiperLoading,
     error: cardSwiperError
-  } = useFetch("/discover/movie", { page: 30, without_genres: "18,10749,36" });
+  } = useFetch("/discover/movie", { page: 10, without_genres: "18,10749,36" });
 
   
   return (
